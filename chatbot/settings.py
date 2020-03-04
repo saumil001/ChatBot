@@ -78,10 +78,19 @@ WSGI_APPLICATION = 'chatbot.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'chatbot_db',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'chatbot_db',
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': '/etc/mysql/my.cnf',
+        },
     }
 }
 

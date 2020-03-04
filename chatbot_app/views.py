@@ -4,3 +4,7 @@ from django.http import  HttpResponse
 # Create your views here.
 def hi(request):
     return render(request, 'chatbot_app/index.html')
+
+
+# def hi(request):
+#     return render(request, 'chatbot_app/index.html')
